@@ -3,12 +3,10 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Text))]
-public class TextAnimator : MonoBehaviour
+public class TextAnimator : Looper
 {
-    [SerializeField] private float _duration = 2f;
     [SerializeField] private string _targetText = "Аквадискотека";
-    [SerializeField] private int _loopCount = -1;
-
+    
     private Text _text;
 
     private void Awake() => _text = GetComponent<Text>();

@@ -2,11 +2,8 @@ using DG.Tweening;
 using UnityEngine;
 
 [RequireComponent(typeof(Renderer))]
-public class ColorChanger : MonoBehaviour
+public class ColorChanger : Looper
 {
-    [SerializeField] private float _duration = 2f;
-    [SerializeField] private int _loopCount = -1;
-    
     private Renderer _renderer;
     private Color _targetColor;
     
